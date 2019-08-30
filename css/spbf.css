@@ -1,0 +1,46 @@
+
+	.container{
+		height: 390px;
+		width: 695px;
+	}
+
+	.video-container{
+		position: relative;
+		width: 695px;
+		height: 390px;
+	}
+	.video-content{
+		width: 695px;
+		height: 390px;
+	}
+	.video-play-button{
+		position: absolute;
+		width: 64px;
+		height: 64px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 2px solid white;
+		cursor: pointer;
+		opacity: .85;
+	}
+
+	.video-container.mini{
+		position: fixed;
+		right: 50px;
+		bottom: 50px;
+		width: 320px;
+		height: 180px;
+		transition: .5s;
+	}
+	.video-content.mini{
+		width: 320px;
+		height: 180px;
+		transition: .5s;		
+	}
+	.video-play-button.mini{
+		width: 32px;
+		height: 32px;
+		transition: .5s
+	}

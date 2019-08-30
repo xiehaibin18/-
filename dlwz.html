@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>地理位置</title>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/dhl.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+	<script src="js/top.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dhl.css">
+	<link rel="stylesheet" type="text/css" href="css/dlwz.css">
+	<style>
+	
+	</style>
+</head>
+<body>
+
+<div id="body">
+	<div id="top">
+		<div id="t1">
+			<canvas id="myCanvas" height="100" width="900"></canvas>
+			<script src="js/logo.js"></script>
+		</div>
+		<div id="t2">
+			<div class="menu clearfix">
+				<ul>
+					<li>
+						<a href="Sise.html">首页</a>
+					</li>
+					<li>
+						<a href="#">学校概况</a>
+						<ul>
+							<li><a href="http://www.sise.com.cn/" target="_blank">学校官网</a></li>
+							<li><a href="">学校简介</a></li>
+							<li><a href="">学校位置</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">本系概况</a>
+						<ul>
+							<li><a href="">系部简介</a></li>
+							<li><a href="rjgc.html" target="_blank">软件工程</a></li>
+							<li><a href="xxgc.html" target="_blank">信息工程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">我的华软</a>
+						<ul>
+							<li><a href="denglu.html" target="_blank">登陆</a></li>
+							<li><a href="zhuce.html" target="_blank">注册</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">信息系统</a>
+						<ul>
+							<li><a href="http://my.sise.com.cn/" target="_blank">教师系统</a></li>
+							<li><a href="http://my.scse.com.cn/" target="_blank">学生系统</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">邮箱登陆</a>
+						<ul>
+							<li><a href="http://mail.sise.com.cn/" target="_blank">教师邮箱</a></li>
+							<li><a href="http://mail.scse.com.cn/" target="_blank">学生邮箱</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="dhlkw"></div>
+	<div id="mid">
+		<button onclick="getLocation()">获取您的实时地理位置</button>
+		<div id="mapholder" style="width:1000px;height:1000px"></div>
+		
+	</div>
+	<div id="bottom" style="background: url(images/yj.jpg);"></div>
+</div>
+<div class="top">
+	<a href="javascript:void(0);">
+		<img src="images/back-to-top.png" alt="" title="回到顶部">
+	</a>
+</div>
+<script src="js/dlwz.js"></script>
+</body>
+</html>
